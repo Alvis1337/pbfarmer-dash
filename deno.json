@@ -1,6 +1,7 @@
 {
   "imports": {
     "@oak/oak": "jsr:@oak/oak@^17.0.0",
+    "@std/dotenv": "jsr:@std/dotenv@^0.225.3",
     "@tajpouria/cors": "jsr:@tajpouria/cors@^1.2.1",
     "react-router-dom": "npm:react-router-dom@^6.26.2"
   }

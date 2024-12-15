@@ -1,5 +1,6 @@
 import { Application, Context, Router } from '@oak/oak';
 import { oakCors } from '@tajpouria/cors';
+import "jsr:@std/dotenv/load";
 
 const miners = {
   littleone: {

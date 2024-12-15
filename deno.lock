@@ -8,6 +8,8 @@
     "jsr:@std/bytes@1": "1.0.2",
     "jsr:@std/bytes@^1.0.2": "1.0.2",
     "jsr:@std/crypto@1": "1.0.3",
+    "jsr:@std/dotenv@*": "0.225.3",
+    "jsr:@std/dotenv@~0.225.3": "0.225.3",
     "jsr:@std/encoding@1": "1.0.5",
     "jsr:@std/encoding@^1.0.5": "1.0.5",
     "jsr:@std/http@1": "1.0.7",
@@ -27,6 +29,7 @@
     "npm:@typescript-eslint/parser@^7.15.0": "7.18.0_eslint@8.57.1_typescript@5.6.2",
     "npm:@vitejs/plugin-react@^4.3.1": "4.3.1_vite@5.4.8_@babel+core@7.25.2",
     "npm:d3-scale@^4.0.2": "4.0.2",
+    "npm:dotenv@^16.4.7": "16.4.7",
     "npm:eslint-plugin-react-hooks@^4.6.2": "4.6.2_eslint@8.57.1",
     "npm:eslint-plugin-react-refresh@~0.4.7": "0.4.12_eslint@8.57.1",
     "npm:eslint@^8.57.0": "8.57.1",
@@ -76,6 +79,9 @@
     },
     "@std/crypto@1.0.3": {
       "integrity": "a2a32f51ddef632d299e3879cd027c630dcd4d1d9a5285d6e6788072f4e51e7f"
+    },
+    "@std/dotenv@0.225.3": {
+      "integrity": "a95e5b812c27b0854c52acbae215856d9cce9d4bbf774d938c51d212711e8d4a"
     },
     "@std/encoding@1.0.5": {
       "integrity": "ecf363d4fc25bd85bd915ff6733a7e79b67e0e7806334af15f4645c569fefc04"
@@ -1130,6 +1136,9 @@
         "csstype"
       ]
     },
+    "dotenv@16.4.7": {
+      "integrity": "sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ=="
+    },
     "electron-to-chromium@1.5.29": {
       "integrity": "sha512-PF8n2AlIhCKXQ+gTpiJi0VhcHDb69kYX4MtCiivctc2QD3XuNZ/XIOlbGzt7WAjjEev0TtaH6Cu3arZExm5DOw=="
     },
@@ -1986,6 +1995,7 @@
   "workspace": {
     "dependencies": [
       "jsr:@oak/oak@17",
+      "jsr:@std/dotenv@~0.225.3",
       "jsr:@tajpouria/cors@^1.2.1",
       "npm:react-router-dom@^6.26.2"
     ],
@@ -2003,6 +2013,7 @@
         "npm:@typescript-eslint/parser@^7.15.0",
         "npm:@vitejs/plugin-react@^4.3.1",
         "npm:d3-scale@^4.0.2",
+        "npm:dotenv@^16.4.7",
         "npm:eslint-plugin-react-hooks@^4.6.2",
         "npm:eslint-plugin-react-refresh@~0.4.7",
         "npm:eslint@^8.57.0",
