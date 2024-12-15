@@ -1,4 +1,4 @@
-import { Application, Context, Router } from '@oak/oak';
+import { Application, Router, RouterContext } from '@oak/oak';
 import { oakCors } from '@tajpouria/cors';
 import "jsr:@std/dotenv/load";
 
@@ -8,21 +8,22 @@ const miners = {
     apiEndpoint: 'https://192.168.3.175/',
   },
   littletwo: {
-    apiKey: Deno.env.get("LITTLEONE_API_KEY"),
+    apiKey: Deno.env.get("LITTLETWO_API_KEY"),
     apiEndpoint: 'https://192.168.3.171/',
   },
   littlethree: {
-    apiKey: Deno.env.get("LITTLEONE_API_KEY"),
+    apiKey: Deno.env.get("LITTLETHREE_API_KEY"),
     apiEndpoint: 'https://192.168.3.138/',
   },
   littlefour: {
-    apiKey: Deno.env.get("LITTLEONE_API_KEY"),
+    apiKey: Deno.env.get("LITTLEFOUR_API_KEY"),
     apiEndpoint: 'https://192.168.3.110/',
   },
 };
 
 const fetchFromMiner = async (url: string, apiKey: string) => {
   try {
+    console.log(`Fetching from ${url} with API key ${apiKey}`); // Debugging line
     const response = await fetch(url, {
       method: 'GET',
       headers: { Authorization: `Bearer ${apiKey}` },
@@ -59,20 +60,20 @@ const getMinerData = async (minerId: string, endpoint: string) => {
   return fetchFromMiner(url, miner.apiKey);
 };
 
-router.get('/miners/:id', async (context: Context) => {
-  const minerId = context.params.id;
+router.get('/miners/:id', async (context: RouterContext) => {
+  const { id: minerId } = context.params;
   try {
     const data = await getMinerData(minerId, 'api/overview');
     context.response.body = data;
     context.response.status = 200;
   } catch (error) {
     context.response.status = 404;
-    context.response.body = { error: error.message };
+    context.response.body = { error: (error as Error).message };
   }
 });
 
-router.get('/miners/:id/pools', async (context: Context) => {
-  const minerId = context.params.id;
+router.get('/miners/:id/pools', async (context: RouterContext) => {
+  const { id: minerId } = context.params;
   try {
     const data = await getMinerData(minerId, 'api/overview');
     context.response.body = data.data?.pools ?? [];
@@ -83,8 +84,8 @@ router.get('/miners/:id/pools', async (context: Context) => {
   }
 });
 
-router.get('/miners/:id/fans', async (context: Context) => {
-  const minerId = context.params.id;
+router.get('/miners/:id/fans', async (context: RouterContext) => {
+  const { id: minerId } = context.params;
   try {
     const data = await getMinerData(minerId, 'api/overview');
     context.response.body = data.data?.fans ?? [];
@@ -95,7 +96,7 @@ router.get('/miners/:id/fans', async (context: Context) => {
   }
 });
 
-router.get("/api/:minerId/timeseries", async (context: Context) => {
+router.get("/api/:minerId/timeseries", async (context: RouterContext) => {
   const { minerId } = context.params;
   try {
     const data = await getMinerData(minerId, 'api/timeseries?series=hashrate');

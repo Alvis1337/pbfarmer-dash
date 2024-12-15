@@ -1,138 +1,130 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo, useCallback } from "react";
 import {
-    CartesianGrid,
-    Legend,
-    Line,
-    LineChart,
-    ResponsiveContainer,
-    Tooltip,
-    XAxis,
-    YAxis,
+  CartesianGrid,
+  Legend,
+  Line,
+  LineChart,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
 } from "recharts";
 import {
-    Alert,
-    CircularProgress,
-    Container,
-    Paper,
-    Typography,
+  CircularProgress,
+  Container,
+  Paper,
+  Typography,
 } from "@mui/material";
-
-interface TimeSeriesData {
-    time: number;
-    value: number | null;
-    minerId: string;
-}
+import { fetchMinerData, TimeSeriesData } from "../utils/utils";
 
 const CombinedHashRateChart: React.FC = () => {
-    const miners = ["littleone", "littletwo", "littlethree", "littlefour"];
-    const [data, setData] = useState<TimeSeriesData[]>([]);
-    const [loading, setLoading] = useState<boolean>(true);
-    const [error, setError] = useState<string | null>(null);
+  const [combinedHashRate, setCombinedHashRate] = useState<string | null>(null);
+  const miners = useMemo(() => ["littleone", "littletwo", "littlethree", "littlefour"], []);
+  const [data, setData] = useState<TimeSeriesData[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+  const [lastUpdated, setLastUpdated] = useState<string | null>(null);
 
-    const getLineColor = (minerId: string) => {
-        const colors: { [key: string]: string } = {
-            littleone: "#8884d8",
-            littletwo: "#82ca9d",
-            littlethree: "#ff7300",
-            littlefour: "#ff0000",
-        };
-        return colors[minerId] || "#000000";
+  const updateTimestamp = useCallback(() => {
+    const now = new Date();
+    setLastUpdated(
+        now.toLocaleTimeString([], {
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+        }),
+    );
+  }, []);
+
+  const getLineColor = useCallback((minerId: string) => {
+    const colors: { [key: string]: string } = {
+      littleone: "#8884d8",
+      littletwo: "#82ca9d",
+      littlethree: "#ff7300",
+      littlefour: "#ff0000",
     };
+    return colors[minerId] || "#000000";
+  }, []);
 
-    const fetchHashRate = async (minerId: string) => {
-        const response = await fetch(`http://localhost:5000/api/${minerId}/timeseries`);
-        if (!response.ok) {
-            throw new Error(`Failed to fetch data for ${minerId}`);
+  const fetchData = useCallback(async () => {
+    try {
+      const normalizedData = await fetchMinerData(miners);
+      setData((prevData) => {
+        if (JSON.stringify(prevData) !== JSON.stringify(normalizedData)) {
+          return normalizedData;
         }
-        const result = await response.json();
+        return prevData;
+      });
+      setLoading(false);
+    } catch (err) {
+      console.log(err);
+    }
+  }, [miners]);
 
-        return result.series.map((item: number[], index: number) => ({
-            time: index,
-            value: item[0],
-            minerId,
-        }));
-    };
+  useEffect(() => {
+    fetchData();
+    const intervalId = setInterval(fetchData, 30000); // Set interval to 30 seconds
+    return () => clearInterval(intervalId);
+  }, [fetchData]);
 
+  useEffect(() => {
     const totalHashRate = miners.reduce((total, minerId) => {
-        const minerData = data.filter((entry) => entry.minerId === minerId);
-        const lastDataPoint = minerData[minerData.length - 1];
-        return total + (lastDataPoint?.value ?? 0);
+      const minerData = data.filter((entry) => entry.minerId === minerId);
+      const lastDataPoint = minerData[minerData.length - 1];
+      return total + (lastDataPoint?.value ?? 0);
     }, 0);
 
-    const formattedHashRate = totalHashRate >= 1000 ? `${(totalHashRate / 1000).toFixed(2)} TH/s` : `${totalHashRate.toFixed(2)} GH/s`;
+    if (totalHashRate >= 1000) {
+      updateTimestamp();
+      setCombinedHashRate(`${(totalHashRate / 1000).toFixed(2)} TH/s`);
+    } else {
+      updateTimestamp();
+      setCombinedHashRate(`${totalHashRate.toFixed(2)} GH/s`);
+    }
+  }, [data, miners, updateTimestamp]);
 
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const allHashRates = await Promise.all(miners.map(fetchHashRate));
+  if (loading) return <CircularProgress />;
 
-                const maxTime = 30;
-
-                const normalizedData: TimeSeriesData[] = [];
-
-                for (let i = 0; i < maxTime; i++) {
-                    miners.forEach((minerId) => {
-                        const minerData = allHashRates.find((data) => data[0]?.minerId === minerId);
-                        const dataPoint = minerData ? minerData.find((point) => point.time === i) : null;
-
-                        normalizedData.push({
-                            time: i,
-                            value: dataPoint ? dataPoint.value : null,
-                            minerId,
-                        });
-                    });
-                }
-
-                setData(normalizedData);
-                setLoading(false);
-            } catch (err) {
-                setError((err as Error).message || "Failed to fetch data");
-                setLoading(false);
-            }
-        };
-
-        fetchData();
-    }, []);
-
-    if (loading) return <CircularProgress />;
-    if (error) return <Alert severity="error">{error}</Alert>;
-
-    const minerLines = miners.map((minerId) => {
-        const minerData = data.filter((entry) => entry.minerId === minerId);
-        return (
-            <Line
-                key={minerId}
-                type="monotone"
-                dataKey="value"
-                data={minerData}
-                stroke={getLineColor(minerId)}
-                name={minerId.toUpperCase()}
-                activeDot={{ r: 8 }}
-            />
-        );
-    });
-
+  const minerLines = miners.map((minerId) => {
+    const minerData = data.filter((entry) => entry.minerId === minerId);
     return (
-        <Container>
-            <Paper sx={{ padding: 2, marginTop: 2 }}>
-                <Typography variant="h6">Combined Miner Hashrates: {formattedHashRate}</Typography>
-                <ResponsiveContainer width="100%" height={400}>
-                    <LineChart data={data}>
-                        <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis
-                            dataKey="time"
-                            type="number"
-                            domain={['dataMin', 'dataMax']}
-                        />
-                        <YAxis />
-                        <Tooltip />
-                        <Legend />
-                        {minerLines}
-                    </LineChart>
-                </ResponsiveContainer>
-            </Paper>
-        </Container>
+        <Line
+            key={minerId}
+            type="monotone"
+            dataKey="value"
+            data={minerData}
+            stroke={getLineColor(minerId)}
+            name={minerId.toUpperCase()}
+            activeDot={{ r: 8 }}
+        />
     );
+  });
+
+  // TODO: it does a ton of api calls to /timeseries. it needs to not
+
+  return (
+      <Container>
+        <Paper sx={{ padding: 2, marginTop: 2 }}>
+          <Typography variant="h6">
+            Combined Miner Hashrates: {combinedHashRate} Updated:{" "}
+            {lastUpdated || "Never"}
+          </Typography>
+          <ResponsiveContainer width="100%" height={400}>
+            <LineChart data={data}>
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis
+                  dataKey="time"
+                  type="number"
+                  domain={["dataMin", "dataMax"]}
+              />
+              <YAxis />
+              <Tooltip />
+              <Legend />
+              {minerLines}
+            </LineChart>
+          </ResponsiveContainer>
+        </Paper>
+      </Container>
+  );
 };
 
 export default CombinedHashRateChart;
