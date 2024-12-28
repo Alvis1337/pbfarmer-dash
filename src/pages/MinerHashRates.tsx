@@ -5,6 +5,7 @@ import {
     Paper,
     Typography,
 } from "@mui/material";
+import "jsr:@std/dotenv/load";
 
 interface MinerHashRate {
     minerId: string;

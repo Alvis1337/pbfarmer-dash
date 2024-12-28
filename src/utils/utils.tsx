@@ -1,3 +1,5 @@
+import "jsr:@std/dotenv/load";
+
 export interface TimeSeriesData {
     time: number;
     value: number | null;

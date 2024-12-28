@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import {Alert, Button, CircularProgress, Grid, Typography} from "@mui/material";
 import {Link} from "react-router-dom";
+import "jsr:@std/dotenv/load";
 
 interface SystemHealthProps {
     minerId: string;

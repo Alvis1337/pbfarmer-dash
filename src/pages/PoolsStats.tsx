@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Typography, Alert, CircularProgress, List, ListItem, ListItemText } from "@mui/material";
+import "jsr:@std/dotenv/load";
 
 interface PoolsStatsProps {
     minerId: string;
