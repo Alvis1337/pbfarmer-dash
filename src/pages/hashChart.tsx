@@ -30,7 +30,7 @@ const MinerDataChart: React.FC<{ minerId: string }> = ({ minerId }) => {
   useEffect(() => {
     (async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/${minerId}/timeseries`, {
+        const response = await fetch(`${Deno.env.get("BACKEND_API")}/api/${minerId}/timeseries`, {
           method: "GET",
         });
 

@@ -1,36 +1,22 @@
-import React, { useEffect, useState } from "react";
-import { Typography, Alert, CircularProgress } from "@mui/material";
+import React from "react";
+import { Typography, Alert } from "@mui/material";
+import { useMinerData } from "./MinerContext";
 
 interface FanSpeedsProps {
     minerId: string;
 }
 
 const FanSpeeds: React.FC<FanSpeedsProps> = ({ minerId }) => {
-    const [fans, setFans] = useState<number[]>([]);
-    const [loading, setLoading] = useState<boolean>(true);
-    const [error, setError] = useState<string | null>(null);
+    const { data, loading, error } = useMinerData();
 
-    useEffect(() => {
-        (async () => {
-            try {
-                const response = await fetch(`http://localhost:5000/miners/${minerId}/fans`);
-                if (!response.ok) {
-                    throw new Error("Failed to fetch fan stats");
-                }
-
-                const result = await response.json();
-                setFans(result);
-                setLoading(false);
-            } catch (err) {
-                setError((err as Error).message || "Failed to fetch data");
-                setLoading(false);
-            }
-        })();
-    }, [minerId]);
-
-    if (loading) return <CircularProgress />;
+    if (loading) return <Typography>Loading...</Typography>;
     if (error) return <Alert severity="error">{error}</Alert>;
-    if (!fans.length) return <Typography>No fans detected</Typography>;
+
+    const fans = data.find((entry) => entry.minerId === minerId)?.fans || [];
+
+    if (!fans.length) {
+        return <Typography>No fans detected</Typography>;
+    }
 
     return (
         <div>

@@ -5,9 +5,10 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
-import {ThemeProvider, createTheme} from '@mui/material/styles';
+import {createTheme, ThemeProvider} from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import React from 'react'
+import {MinerProvider} from "./pages/MinerContext.tsx";
 
 const darkTheme = createTheme({
     palette: {
@@ -18,6 +19,8 @@ const darkTheme = createTheme({
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
     <ThemeProvider theme={darkTheme}>
         <CssBaseline/>
-        <App/>
+        <MinerProvider>
+            <App/>
+        </MinerProvider>
     </ThemeProvider>
 );

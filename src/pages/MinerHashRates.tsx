@@ -18,7 +18,7 @@ const MinerHashRates: React.FC = () => {
     const [error, setError] = useState<string | null>(null);
 
     const fetchMinerHashRate = async (minerId: string) => {
-        const response = await fetch(`http://localhost:5000/api/${minerId}/timeseries`);
+        const response = await fetch(`${Deno.env.get("BACKEND_API")}/api/${minerId}/timeseries`);
         if (!response.ok) {
             throw new Error(`Failed to fetch data for ${minerId}`);
         }
