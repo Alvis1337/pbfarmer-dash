@@ -40,6 +40,7 @@ const Index: React.FC = () => {
     // Meowcoin fetching data
     const [meowcoinData, setMeowcoinData] = useState(null);
     useEffect(() => {
+        console.log("fetching meow")
         fetchMeowcoinData();
     }, []);
 
