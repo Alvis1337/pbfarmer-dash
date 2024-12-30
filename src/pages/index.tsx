@@ -88,7 +88,7 @@ const Index: React.FC = () => {
                                 Workers Online: {memoedMeowcoinData.workersOnline}
                             </Typography>
                             <Typography variant="h6">
-                                Hash Rate: {memoedMeowcoinData.modeStats.pplns.default.currentHashrate.toFixed(2)} H/s
+                                Hash Rate: {memoedMeowcoinData.modeStats.pplns.default.dayHashrate.toFixed(2) / 1000000} MH/s
                             </Typography>
                             <Typography variant="h6">
                                 Monthly Profit: {memoedMeowcoinData.stats.income.income_Month.toFixed(2)} MEWC
