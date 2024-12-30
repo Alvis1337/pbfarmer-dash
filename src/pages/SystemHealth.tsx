@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from "react";
 import {Alert, Button, CircularProgress, Grid, Typography} from "@mui/material";
 import {Link} from "react-router-dom";
-import "jsr:@std/dotenv/load";
 
 interface SystemHealthProps {
     minerId: string;
@@ -15,7 +14,7 @@ const SystemHealth: React.FC<SystemHealthProps> = ({minerId}) => {
 
     const fetchSystemHealth = async () => {
         try {
-            const response = await fetch(`${Deno.env.get("BACKEND_API")}/miners/${minerId}`);
+            const response = await fetch(`http://192.168.112.177:5000/miners/${minerId}`);
             if (!response.ok) {
                 throw new Error("Failed to fetch miner overview");
             }

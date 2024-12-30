@@ -1,5 +1,3 @@
-import "jsr:@std/dotenv/load";
-
 export interface TimeSeriesData {
     time: number;
     value: number | null;
@@ -8,7 +6,7 @@ export interface TimeSeriesData {
 
 export const fetchHashRate = async (minerId: string) => {
     const response = await fetch(
-        `${Deno.env.get("BACKEND_API")}/api/${minerId}/timeseries`,
+        `http://192.168.112.177:5000/api/${minerId}/timeseries`,
     );
     if (!response.ok) {
         throw new Error(`Failed to fetch data for ${minerId}`);

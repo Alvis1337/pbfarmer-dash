@@ -99,46 +99,9 @@ const Index: React.FC = () => {
                             <SystemHealth minerId={minerId} />
                         </Paper>
                     ))}
+</Grid>
                 </Grid>
 
-                {/* Warthog Section */}
-                <Grid item xs={12}>
-                    <Paper sx={{ padding: 3, backgroundColor: "#1E1E1E", borderRadius: 2 }}>
-                        <Typography variant="h5" gutterBottom sx={{ fontWeight: "bold" }}>
-                            Warthog Data
-                        </Typography>
-                        {loadingWarthog ? (
-                            <Typography variant="body1">Loading Warthog data...</Typography>
-                        ) : warthogError ? (
-                            <Typography variant="body1" color="error">
-                                {warthogError}
-                            </Typography>
-                        ) : warthogData ? (
-                            <>
-                                <Typography variant="body1">
-                                    <strong>Current Hash Rate:</strong> {warthogData.currentHashRate} H/s
-                                </Typography>
-                                <Typography variant="body1">
-                                    <strong>Unconfirmed Balance:</strong> {(warthogData.unconfirmedBalance / 1e8).toFixed(8)} KAS
-                                </Typography>
-                                <Typography variant="body1">
-                                    <strong>Pending Balance:</strong> {(warthogData.pendingBalance / 1e8).toFixed(8)} KAS
-                                </Typography>
-                                <Typography variant="body1">
-                                    <strong>Total Paid:</strong> {(warthogData.totalPaid / 1e8).toFixed(8)} KAS
-                                </Typography>
-                                <Typography variant="body1">
-                                    <strong>Current Payout Estimate:</strong> {(warthogData.currentPayoutEstimate / 1e8).toFixed(8)} KAS
-                                </Typography>
-                            </>
-                        ) : (
-                            <Typography variant="body1" color="error">
-                                Failed to load Warthog data
-                            </Typography>
-                        )}
-                    </Paper>
-                </Grid>
-            </Grid>
         </Container>
     );
 };

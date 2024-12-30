@@ -22,6 +22,7 @@
     "npm:@fontsource/roboto@^5.1.0": "5.1.0",
     "npm:@mui/icons-material@^6.2.0": "6.2.0_@mui+material@6.2.0__@emotion+react@11.14.0___react@18.3.1__@emotion+styled@11.14.0___@emotion+react@11.14.0____react@18.3.1___react@18.3.1__@types+react@18.3.9__react@18.3.1__react-dom@18.3.1___react@18.3.1_@types+react@18.3.9_react@18.3.1_@emotion+react@11.14.0__react@18.3.1_@emotion+styled@11.14.0__@emotion+react@11.14.0___react@18.3.1__react@18.3.1_react-dom@18.3.1__react@18.3.1",
     "npm:@mui/material@^6.2.0": "6.2.0_@emotion+react@11.14.0__react@18.3.1_@emotion+styled@11.14.0__@emotion+react@11.14.0___react@18.3.1__react@18.3.1_@types+react@18.3.9_react@18.3.1_react-dom@18.3.1__react@18.3.1",
+    "npm:@mui/material@^6.3.0": "6.3.0_@emotion+react@11.14.0__react@18.3.1_@emotion+styled@11.14.0__@emotion+react@11.14.0___react@18.3.1__react@18.3.1_@types+react@18.3.9_react@18.3.1_react-dom@18.3.1__react@18.3.1",
     "npm:@mui/styled-engine-sc@^6.2.0": "6.2.0_styled-components@6.1.13__react@18.3.1__react-dom@18.3.1___react@18.3.1_react@18.3.1_react-dom@18.3.1__react@18.3.1",
     "npm:@tanstack/react-query@^5.62.8": "5.62.8_react@18.3.1",
     "npm:@types/react-dom@^18.3.0": "18.3.0",
@@ -517,11 +518,14 @@
     "@mui/core-downloads-tracker@6.2.0": {
       "integrity": "sha512-Nn5PSkUqbDrvezpiiiYZiAbX4SFEiy3CbikUL6pWOXEUsq+L1j50OOyyUIHpaX2Hr+5V5UxTh+fPeC4nsGNhdw=="
     },
+    "@mui/core-downloads-tracker@6.3.0": {
+      "integrity": "sha512-/d8NwSuC3rMwCjswmGB3oXC4sdDuhIUJ8inVQAxGrADJhf0eq/kmy+foFKvpYhHl2siOZR+MLdFttw6/Bzqtqg=="
+    },
     "@mui/icons-material@6.2.0_@mui+material@6.2.0__@emotion+react@11.14.0___react@18.3.1__@emotion+styled@11.14.0___@emotion+react@11.14.0____react@18.3.1___react@18.3.1__@types+react@18.3.9__react@18.3.1__react-dom@18.3.1___react@18.3.1_@types+react@18.3.9_react@18.3.1_@emotion+react@11.14.0__react@18.3.1_@emotion+styled@11.14.0__@emotion+react@11.14.0___react@18.3.1__react@18.3.1_react-dom@18.3.1__react@18.3.1": {
       "integrity": "sha512-WR1EEhGOSvxAsoTSzWZBlrWFjul8wziDrII4rC3PvMBHhBYBqEc2n/0aamfFbwkH5EiYb96aqc6kYY6tB310Sw==",
       "dependencies": [
         "@babel/runtime",
-        "@mui/material",
+        "@mui/material@6.2.0_@emotion+react@11.14.0__react@18.3.1_@emotion+styled@11.14.0__@emotion+react@11.14.0___react@18.3.1__react@18.3.1_@types+react@18.3.9_react@18.3.1_react-dom@18.3.1__react@18.3.1",
         "@types/react",
         "react"
       ]
@@ -532,10 +536,32 @@
         "@babel/runtime",
         "@emotion/react",
         "@emotion/styled",
-        "@mui/core-downloads-tracker",
-        "@mui/system",
-        "@mui/types",
-        "@mui/utils",
+        "@mui/core-downloads-tracker@6.2.0",
+        "@mui/system@6.2.0_@emotion+react@11.14.0__react@18.3.1_@emotion+styled@11.14.0__@emotion+react@11.14.0___react@18.3.1__react@18.3.1_@types+react@18.3.9_react@18.3.1",
+        "@mui/types@7.2.19_@types+react@18.3.9",
+        "@mui/utils@6.2.0_@types+react@18.3.9_react@18.3.1",
+        "@popperjs/core",
+        "@types/react",
+        "@types/react-transition-group",
+        "clsx",
+        "csstype",
+        "prop-types",
+        "react",
+        "react-dom",
+        "react-is@19.0.0",
+        "react-transition-group"
+      ]
+    },
+    "@mui/material@6.3.0_@emotion+react@11.14.0__react@18.3.1_@emotion+styled@11.14.0__@emotion+react@11.14.0___react@18.3.1__react@18.3.1_@types+react@18.3.9_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+      "integrity": "sha512-qhlTFyRMxfoVPxUtA5e8IvqxP0dWo2Ij7cvot7Orag+etUlZH+3UwD8gZGt+3irOoy7Ms3UNBflYjwEikUXtAQ==",
+      "dependencies": [
+        "@babel/runtime",
+        "@emotion/react",
+        "@emotion/styled",
+        "@mui/core-downloads-tracker@6.3.0",
+        "@mui/system@6.3.0_@emotion+react@11.14.0__react@18.3.1_@emotion+styled@11.14.0__@emotion+react@11.14.0___react@18.3.1__react@18.3.1_@types+react@18.3.9_react@18.3.1",
+        "@mui/types@7.2.20_@types+react@18.3.9",
+        "@mui/utils@6.3.0_@types+react@18.3.9_react@18.3.1",
         "@popperjs/core",
         "@types/react",
         "@types/react-transition-group",
@@ -552,7 +578,17 @@
       "integrity": "sha512-lYd2MrVddhentF1d/cMXKnwlDjr/shbO3A2eGq22PCYUoZaqtAGZMc0U86KnJ/Sh5YzNYePqTOaaowAN8Qea8A==",
       "dependencies": [
         "@babel/runtime",
-        "@mui/utils",
+        "@mui/utils@6.2.0_@types+react@18.3.9_react@18.3.1",
+        "@types/react",
+        "prop-types",
+        "react"
+      ]
+    },
+    "@mui/private-theming@6.3.0_@types+react@18.3.9_react@18.3.1": {
+      "integrity": "sha512-tdS8jvqMokltNTXg6ioRCCbVdDmZUJZa/T9VtTnX2Lwww3FTgCakst9tWLZSxm1fEE9Xp0m7onZJmgeUmWQYVw==",
+      "dependencies": [
+        "@babel/runtime",
+        "@mui/utils@6.3.0_@types+react@18.3.9_react@18.3.1",
         "@types/react",
         "prop-types",
         "react"
@@ -583,16 +619,47 @@
         "react"
       ]
     },
+    "@mui/styled-engine@6.3.0_@emotion+react@11.14.0__react@18.3.1_@emotion+styled@11.14.0__@emotion+react@11.14.0___react@18.3.1__react@18.3.1_react@18.3.1": {
+      "integrity": "sha512-iWA6eyiPkO07AlHxRUvI7dwVRSc+84zV54kLmjUms67GJeOWVuXlu8ZO+UhCnwJxHacghxnabsMEqet5PYQmHg==",
+      "dependencies": [
+        "@babel/runtime",
+        "@emotion/cache",
+        "@emotion/react",
+        "@emotion/serialize",
+        "@emotion/sheet",
+        "@emotion/styled",
+        "csstype",
+        "prop-types",
+        "react"
+      ]
+    },
     "@mui/system@6.2.0_@emotion+react@11.14.0__react@18.3.1_@emotion+styled@11.14.0__@emotion+react@11.14.0___react@18.3.1__react@18.3.1_@types+react@18.3.9_react@18.3.1": {
       "integrity": "sha512-DCeqev9Cd4f4pm3O1lqSGW/DIHHBG6ZpqMX9iIAvN4asYv+pPWv2/lKov9kWk5XThhxFnGSv93SRNE1kNRRg5Q==",
       "dependencies": [
         "@babel/runtime",
         "@emotion/react",
         "@emotion/styled",
-        "@mui/private-theming",
-        "@mui/styled-engine",
-        "@mui/types",
-        "@mui/utils",
+        "@mui/private-theming@6.2.0_@types+react@18.3.9_react@18.3.1",
+        "@mui/styled-engine@6.2.0_@emotion+react@11.14.0__react@18.3.1_@emotion+styled@11.14.0__@emotion+react@11.14.0___react@18.3.1__react@18.3.1_react@18.3.1",
+        "@mui/types@7.2.19_@types+react@18.3.9",
+        "@mui/utils@6.2.0_@types+react@18.3.9_react@18.3.1",
+        "@types/react",
+        "clsx",
+        "csstype",
+        "prop-types",
+        "react"
+      ]
+    },
+    "@mui/system@6.3.0_@emotion+react@11.14.0__react@18.3.1_@emotion+styled@11.14.0__@emotion+react@11.14.0___react@18.3.1__react@18.3.1_@types+react@18.3.9_react@18.3.1": {
+      "integrity": "sha512-L+8hUHMNlfReKSqcnVslFrVhoNfz/jw7Fe9NfDE85R3KarvZ4O3MU9daF/lZeqEAvnYxEilkkTfDwQ7qCgJdFg==",
+      "dependencies": [
+        "@babel/runtime",
+        "@emotion/react",
+        "@emotion/styled",
+        "@mui/private-theming@6.3.0_@types+react@18.3.9_react@18.3.1",
+        "@mui/styled-engine@6.3.0_@emotion+react@11.14.0__react@18.3.1_@emotion+styled@11.14.0__@emotion+react@11.14.0___react@18.3.1__react@18.3.1_react@18.3.1",
+        "@mui/types@7.2.20_@types+react@18.3.9",
+        "@mui/utils@6.3.0_@types+react@18.3.9_react@18.3.1",
         "@types/react",
         "clsx",
         "csstype",
@@ -606,11 +673,30 @@
         "@types/react"
       ]
     },
+    "@mui/types@7.2.20_@types+react@18.3.9": {
+      "integrity": "sha512-straFHD7L8v05l/N5vcWk+y7eL9JF0C2mtph/y4BPm3gn2Eh61dDwDB65pa8DLss3WJfDXYC7Kx5yjP0EmXpgw==",
+      "dependencies": [
+        "@types/react"
+      ]
+    },
     "@mui/utils@6.2.0_@types+react@18.3.9_react@18.3.1": {
       "integrity": "sha512-77CaFJi+OIi2SjbPwCis8z5DXvE0dfx9hBz5FguZHt1VYFlWEPCWTHcMsQCahSErnfik5ebLsYK8+D+nsjGVfw==",
       "dependencies": [
         "@babel/runtime",
-        "@mui/types",
+        "@mui/types@7.2.19_@types+react@18.3.9",
+        "@types/prop-types@15.7.14",
+        "@types/react",
+        "clsx",
+        "prop-types",
+        "react",
+        "react-is@19.0.0"
+      ]
+    },
+    "@mui/utils@6.3.0_@types+react@18.3.9_react@18.3.1": {
+      "integrity": "sha512-MkDBF08OPVwXhAjedyMykRojgvmf0y/jxkBWjystpfI/pasyTYrfdv4jic6s7j3y2+a+SJzS9qrD6X8ZYj/8AQ==",
+      "dependencies": [
+        "@babel/runtime",
+        "@mui/types@7.2.20_@types+react@18.3.9",
         "@types/prop-types@15.7.14",
         "@types/react",
         "clsx",
@@ -2016,7 +2102,7 @@
         "npm:@emotion/styled@^11.14.0",
         "npm:@fontsource/roboto@^5.1.0",
         "npm:@mui/icons-material@^6.2.0",
-        "npm:@mui/material@^6.2.0",
+        "npm:@mui/material@^6.3.0",
         "npm:@mui/styled-engine-sc@^6.2.0",
         "npm:@tanstack/react-query@^5.62.8",
         "npm:@types/react-dom@^18.3.0",

@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "deno task dev:api & deno task dev:vite",
-    "dev:api": "deno run --allow-env --allow-read --allow-net --unsafely-ignore-certificate-errors api/main.ts",
+    "dev:api": "deno run --allow-env --allow-read --allow-net --unsafely-ignore-certificate-errors api/main.ts --host",
     "dev:vite": "deno run --unsafely-ignore-certificate-errors -A npm:vite",
     "build": "tsc -b && vite build",
     "serve": "deno task build && deno task dev:api",
@@ -17,7 +17,7 @@
     "@emotion/styled": "^11.14.0",
     "@fontsource/roboto": "^5.1.0",
     "@mui/icons-material": "^6.2.0",
-    "@mui/material": "^6.2.0",
+    "@mui/material": "^6.3.0",
     "@mui/styled-engine-sc": "^6.2.0",
     "@tanstack/react-query": "^5.62.8",
     "d3-scale": "^4.0.2",
