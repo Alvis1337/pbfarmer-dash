@@ -94,7 +94,7 @@ const Index: React.FC = () => {
                             </Typography>
                             <Typography variant="h6">
                                 Hash
-                                Rate: {memoedMeowcoinData.modeStats.pplns.default.dayHashrate.toFixed(2) / 1000000} MH/s
+                                Rate: {(memoedMeowcoinData.modeStats.pplns.default.currentHashrate.toFixed(2) / 1000000).toFixed()} MH/s
                             </Typography>
                             <Typography variant="h6">
                                 Monthly Profit: {memoedMeowcoinData.stats.income.income_Month.toFixed(2)} MEWC
