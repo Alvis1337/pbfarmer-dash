@@ -2,7 +2,7 @@ import React, {useEffect, useMemo, useState} from "react";
 import {Container, Grid, Paper, Typography} from "@mui/material";
 import CombinedHashRateChart from "./CombinedHashRateChart.tsx";
 import SystemHealth from "./SystemHealth.tsx";
-import {fetchMinerData, TimeSeriesData} from "../utils/utils.tsx";
+import {fetchMinerData, TimeSeriesData, fetchMeowcoinData} from "../utils/utils.tsx";
 
 const Index: React.FC = () => {
     // Kaspa-related state
@@ -40,10 +40,6 @@ const Index: React.FC = () => {
     // Meowcoin fetching data
     const [meowcoinData, setMeowcoinData] = useState(null);
     useEffect(() => {
-        const fetchMeowcoinData = async () => {
-            const data = await fetchMeowcoinData();
-            setMeowcoinData(data);
-        };
         fetchMeowcoinData();
     }, []);
 
