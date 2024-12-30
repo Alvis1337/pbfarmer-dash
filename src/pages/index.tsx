@@ -78,7 +78,7 @@ const Index: React.FC = () => {
                             <SystemHealth minerId={minerId}/>
                         </Paper>
                     ))}
-                    {memoedMeowcoinData && (
+                    {meowcoinData && (
                         <Paper sx={{
                             padding: 3, backgroundColor: "#1E1E1E", marginBottom: 2, borderRadius: 2
                         }}>
