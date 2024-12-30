@@ -1,0 +1,1069 @@
+{
+  "mode_stats": {
+    "pplns": {
+      "default": {
+        "currentHashrate": 18793971.424510226,
+        "hashrate": 29900708.235890336,
+        "dayHashrate": 28391417.906532623
+      }
+    }
+  },
+  "stats": {
+    "balance": 90.078695840854,
+    "immature_balance": 121.120672340546,
+    "paid": 11299.861092140507,
+    "todayPaid": 0.0,
+    "income": {
+      "income_Hour": 60.554906945857,
+      "income_HalfDay": 815.716798287674,
+      "income_Day": 1564.962086560197,
+      "income_Week": 10849.894373033301,
+      "income_Month": 11511.060460321907
+    },
+    "effort": [
+      {
+        "mode": "pplns",
+        "rate": 0.23465004151420776
+      }
+    ],
+    "minerProfitGraph": [
+      {
+        "address": "MBrDY7eESdXJq9298R6HqFWEx2A1m4zxSr",
+        "amount": 71.971058183000,
+        "participation": 0.00078122056399502146,
+        "created": "2024-12-29T02:00:00+00:00"
+      },
+      {
+        "address": "MBrDY7eESdXJq9298R6HqFWEx2A1m4zxSr",
+        "amount": 55.072620418630,
+        "participation": 0.00109802335266093541,
+        "created": "2024-12-29T03:00:00+00:00"
+      },
+      {
+        "address": "MBrDY7eESdXJq9298R6HqFWEx2A1m4zxSr",
+        "amount": 77.293346188082,
+        "participation": 0.00091760160242723561,
+        "created": "2024-12-29T04:00:00+00:00"
+      },
+      {
+        "address": "MBrDY7eESdXJq9298R6HqFWEx2A1m4zxSr",
+        "amount": 53.704383095903,
+        "participation": 0.00070268896821797324,
+        "created": "2024-12-29T05:00:00+00:00"
+      },
+      {
+        "address": "MBrDY7eESdXJq9298R6HqFWEx2A1m4zxSr",
+        "amount": 49.838338235507,
+        "participation": 0.00094578757534689332,
+        "created": "2024-12-29T06:00:00+00:00"
+      },
+      {
+        "address": "MBrDY7eESdXJq9298R6HqFWEx2A1m4zxSr",
+        "amount": 74.976709993965,
+        "participation": 0.00117349954521281648,
+        "created": "2024-12-29T07:00:00+00:00"
+      },
+      {
+        "address": "MBrDY7eESdXJq9298R6HqFWEx2A1m4zxSr",
+        "amount": 63.942888723042,
+        "participation": 0.00064884729318657166,
+        "created": "2024-12-29T08:00:00+00:00"
+      },
+      {
+        "address": "MBrDY7eESdXJq9298R6HqFWEx2A1m4zxSr",
+        "amount": 54.166351733510,
+        "participation": 0.00069364091069714737,
+        "created": "2024-12-29T09:00:00+00:00"
+      },
+      {
+        "address": "MBrDY7eESdXJq9298R6HqFWEx2A1m4zxSr",
+        "amount": 56.186150643925,
+        "participation": 0.00087370840717738724,
+        "created": "2024-12-29T10:00:00+00:00"
+      },
+      {
+        "address": "MBrDY7eESdXJq9298R6HqFWEx2A1m4zxSr",
+        "amount": 40.895599287446,
+        "participation": 0.00091134826553247071,
+        "created": "2024-12-29T11:00:00+00:00"
+      },
+      {
+        "address": "MBrDY7eESdXJq9298R6HqFWEx2A1m4zxSr",
+        "amount": 72.188165652229,
+        "participation": 0.00087190300161843342,
+        "created": "2024-12-29T12:00:00+00:00"
+      },
+      {
+        "address": "MBrDY7eESdXJq9298R6HqFWEx2A1m4zxSr",
+        "amount": 72.004034451970,
+        "participation": 0.00151220573041412116,
+        "created": "2024-12-29T13:00:00+00:00"
+      },
+      {
+        "address": "MBrDY7eESdXJq9298R6HqFWEx2A1m4zxSr",
+        "amount": 95.869159012158,
+        "participation": 0.00133137757222387451,
+        "created": "2024-12-29T14:00:00+00:00"
+      },
+      {
+        "address": "MBrDY7eESdXJq9298R6HqFWEx2A1m4zxSr",
+        "amount": 72.435621449093,
+        "participation": 0.00117379381160366869,
+        "created": "2024-12-29T15:00:00+00:00"
+      },
+      {
+        "address": "MBrDY7eESdXJq9298R6HqFWEx2A1m4zxSr",
+        "amount": 64.648087522484,
+        "participation": 0.00105415375829707718,
+        "created": "2024-12-29T16:00:00+00:00"
+      },
+      {
+        "address": "MBrDY7eESdXJq9298R6HqFWEx2A1m4zxSr",
+        "amount": 52.983120690452,
+        "participation": 0.00135778768621444703,
+        "created": "2024-12-29T17:00:00+00:00"
+      },
+      {
+        "address": "MBrDY7eESdXJq9298R6HqFWEx2A1m4zxSr",
+        "amount": 77.703932827041,
+        "participation": 0.00141062156463287497,
+        "created": "2024-12-29T18:00:00+00:00"
+      },
+      {
+        "address": "MBrDY7eESdXJq9298R6HqFWEx2A1m4zxSr",
+        "amount": 50.811963638573,
+        "participation": 0.00101050914444575501,
+        "created": "2024-12-29T19:00:00+00:00"
+      },
+      {
+        "address": "MBrDY7eESdXJq9298R6HqFWEx2A1m4zxSr",
+        "amount": 44.939464942766,
+        "participation": 0.00097532608845654297,
+        "created": "2024-12-29T20:00:00+00:00"
+      },
+      {
+        "address": "MBrDY7eESdXJq9298R6HqFWEx2A1m4zxSr",
+        "amount": 79.875857079101,
+        "participation": 0.00125299071310389913,
+        "created": "2024-12-29T21:00:00+00:00"
+      },
+      {
+        "address": "MBrDY7eESdXJq9298R6HqFWEx2A1m4zxSr",
+        "amount": 77.866563255288,
+        "participation": 0.00156521865578372956,
+        "created": "2024-12-29T22:00:00+00:00"
+      },
+      {
+        "address": "MBrDY7eESdXJq9298R6HqFWEx2A1m4zxSr",
+        "amount": 66.024086472891,
+        "participation": 0.00134373987240808106,
+        "created": "2024-12-29T23:00:00+00:00"
+      },
+      {
+        "address": "MBrDY7eESdXJq9298R6HqFWEx2A1m4zxSr",
+        "amount": 60.554906945857,
+        "participation": 0.00118905470030615235,
+        "created": "2024-12-30T00:00:00+00:00"
+      },
+      {
+        "address": "MBrDY7eESdXJq9298R6HqFWEx2A1m4zxSr",
+        "amount": 48.052280216979,
+        "participation": 0.00117504979973632813,
+        "created": "2024-12-30T01:00:00+00:00"
+      }
+    ]
+  },
+  "payments": [
+    {
+      "amount": 103.837616813516,
+      "timestamp": 1735518424,
+      "tx": "0af78a13d3c13191e1dfdb557c1a0509853756b631eb9dcee4317582a3ef6776"
+    },
+    {
+      "amount": 113.088137556539,
+      "timestamp": 1735511841,
+      "tx": "1f377a5271840f707a35c606460de26703efd4aa1d1bcf5a268d33e8c250a52e"
+    },
+    {
+      "amount": 100.940102740798,
+      "timestamp": 1735505225,
+      "tx": "9d046bb6156cd05a3a1a87acf3e5cd4771afab77f84083bd89cf21cab349b04f"
+    },
+    {
+      "amount": 101.690766740333,
+      "timestamp": 1735500158,
+      "tx": "9bc92931ec2a622b31f755a22c3c6843692f8f5fdc86bce0ea1306e23639460f"
+    },
+    {
+      "amount": 103.075598273975,
+      "timestamp": 1735494123,
+      "tx": "0f6e730d911fd77d3ca983503e24f21515031ceb45ac638a2d2e15634127c8b4"
+    },
+    {
+      "amount": 101.354323740086,
+      "timestamp": 1735488574,
+      "tx": "91eb9e9f61b295de1c72338ac154a62a5b090a0279d7c8c78f47b7af2f3d1f6d"
+    },
+    {
+      "amount": 100.771330110235,
+      "timestamp": 1735483931,
+      "tx": "939db0c8e1344923dfedf72147469b923e0796c6d5499446764852b7c2d91df0"
+    },
+    {
+      "amount": 100.997549759329,
+      "timestamp": 1735478855,
+      "tx": "c5f4c53f7866fa06addc4fcd87ac8e0456f758b70ec4679e57577b8ae1597d50"
+    },
+    {
+      "amount": 101.334227406661,
+      "timestamp": 1735473725,
+      "tx": "3e0a638e7e97a858cc1e61d1b1ea58a5ef425942f5eef848d00df37217d1061f"
+    },
+    {
+      "amount": 107.806441249926,
+      "timestamp": 1735465335,
+      "tx": "b247ae8d28f5c33b184d438e103f2f7963faf093d470542b1790efeb220d4db9"
+    },
+    {
+      "amount": 105.749072816270,
+      "timestamp": 1735459297,
+      "tx": "89f386511f63d73962bfbcb16ef42d6e13a9127f352e73b3b8c06ab792b1d65c"
+    },
+    {
+      "amount": 100.734221053325,
+      "timestamp": 1735454314,
+      "tx": "5271b0163df1b9ce34543ef0581073f5f25c2b365fec371b848885b00eae4771"
+    },
+    {
+      "amount": 101.835445526003,
+      "timestamp": 1735448833,
+      "tx": "b890351f4df2b7ec47c2de43951bed3a4c7f5550a7468a1e38af36c67762bfb6"
+    },
+    {
+      "amount": 111.295772259167,
+      "timestamp": 1735441638,
+      "tx": "cd22fa253b3e2a3fc695e96b0323afcaf1666fb484e665e2191815dde92bf632"
+    },
+    {
+      "amount": 119.819385336532,
+      "timestamp": 1735428399,
+      "tx": "f70f2f7a0b780d1aea58221f7f246a3f691c39c63999d4318b4fd8743e2b76b8"
+    },
+    {
+      "amount": 104.792503260828,
+      "timestamp": 1735421887,
+      "tx": "8f38c8c0b87d1bda3d661ae2e5fa32472503fe66e14cb90e252d945a1974afd1"
+    },
+    {
+      "amount": 104.124761827550,
+      "timestamp": 1735414898,
+      "tx": "e2e34565a7fc58c7a9e70fc581b635f604f5ebe0ae3b072c097199639dbf2e04"
+    },
+    {
+      "amount": 107.209568072956,
+      "timestamp": 1735408053,
+      "tx": "2482c388f0307db8b9df6a713a989dc25652c6d740899aa4dc0723231dd00b24"
+    },
+    {
+      "amount": 104.888800167788,
+      "timestamp": 1735403588,
+      "tx": "727ded747019feb5a3b0a901a2b446584150391e02c23a000666ad8f8f43f6dd"
+    },
+    {
+      "amount": 101.886789325197,
+      "timestamp": 1735397816,
+      "tx": "107309c05c4263cdbf6609829b1c45c084f3d6069d3e2f17cccf78c89c907e90"
+    },
+    {
+      "amount": 113.229211454009,
+      "timestamp": 1735391224,
+      "tx": "7ddaab05668137ae809bccb392deae8e380bdaac3860b0087f01e98d4993eecb"
+    },
+    {
+      "amount": 101.987376467149,
+      "timestamp": 1735384084,
+      "tx": "8ae1cfa2bcbee2d0060e39215b19af3765a5c8d21541aa69aa7829262ee29aed"
+    },
+    {
+      "amount": 100.575854097916,
+      "timestamp": 1735380759,
+      "tx": "effd35e136d15af44f3704e0e19d77ddfee3232cfcf5cdf1652058a203cf1dd5"
+    },
+    {
+      "amount": 108.057634900456,
+      "timestamp": 1735375929,
+      "tx": "b4389cc4b49d78fbb255d4bd3eadffa5b53c46836565f200d33b42c96cbc967f"
+    },
+    {
+      "amount": 102.008483834544,
+      "timestamp": 1735371414,
+      "tx": "e49d6f2c978b13db5ba7a358c8033c1318e265a2760970a0c3f884e44d9facaa"
+    },
+    {
+      "amount": 104.838552362289,
+      "timestamp": 1735365713,
+      "tx": "8871ad00b0619cb71e5f400b67a68801d1319cf9cac5960f03ac32a115e37d70"
+    },
+    {
+      "amount": 101.638575562423,
+      "timestamp": 1735358227,
+      "tx": "6c501ec9d4e5662f05e8267e406112ffc4dde681d98683b46d52a6f966111f88"
+    },
+    {
+      "amount": 116.710668360672,
+      "timestamp": 1735353429,
+      "tx": "071a7671ea2162b32c7f5b779a95f2b715882ca0c6d191cca9229b6c7ba4af57"
+    },
+    {
+      "amount": 101.107808675157,
+      "timestamp": 1735349301,
+      "tx": "2346b128591a343449e5a41adc1b442b9a4e769e6ae01a8032c706d118306e3c"
+    },
+    {
+      "amount": 121.061938906409,
+      "timestamp": 1735345718,
+      "tx": "979ef4d4b34f8a143495cc4ecec1df54fcd77d36b91a072f7367cee445f0cd81"
+    }
+  ],
+  "workers": [
+    {
+      "worker": "undefined",
+      "lastBeat": 1735522251,
+      "mode": "pplns",
+      "offline": false,
+      "hr": 18793971.424510226,
+      "hr2": 29900708.235890336,
+      "hr3": 28391417.906532623,
+      "algo": "default",
+      "participation": 0.0008128353811619821
+    }
+  ],
+  "workersTotal": 1,
+  "workersOnline": 1,
+  "workersOffline": 0,
+  "block_rate": {
+    "pplns": [
+      {
+        "created": "2024-12-24T00:00:00",
+        "total_count": 1,
+        "normal_count": 1,
+        "orhpan_count": 0,
+        "uncle_count": 0,
+        "effort": 0.29686542997780413
+      },
+      {
+        "created": "2024-12-25T00:00:00",
+        "total_count": 1,
+        "normal_count": 1,
+        "orhpan_count": 0,
+        "uncle_count": 0,
+        "effort": 0.23270571965857806
+      },
+      {
+        "created": "2024-12-26T00:00:00",
+        "total_count": 2,
+        "normal_count": 2,
+        "orhpan_count": 0,
+        "uncle_count": 0,
+        "effort": 0.5078051226676094
+      },
+      {
+        "created": "2024-12-27T00:00:00",
+        "total_count": 0,
+        "normal_count": 0,
+        "orhpan_count": 0,
+        "uncle_count": 0,
+        "effort": 0.0
+      },
+      {
+        "created": "2024-12-28T00:00:00",
+        "total_count": 0,
+        "normal_count": 0,
+        "orhpan_count": 0,
+        "uncle_count": 0,
+        "effort": 0.0
+      },
+      {
+        "created": "2024-12-29T00:00:00",
+        "total_count": 2,
+        "normal_count": 2,
+        "orhpan_count": 0,
+        "uncle_count": 0,
+        "effort": 1.038054901323631
+      },
+      {
+        "created": "2024-12-30T00:00:00",
+        "total_count": 0,
+        "normal_count": 0,
+        "orhpan_count": 0,
+        "uncle_count": 0,
+        "effort": 0.0
+      }
+    ],
+    "solo": [
+      {
+        "created": "2024-12-24T00:00:00",
+        "total_count": 0,
+        "normal_count": 0,
+        "orhpan_count": 0,
+        "uncle_count": 0,
+        "effort": 0.0
+      },
+      {
+        "created": "2024-12-25T00:00:00",
+        "total_count": 0,
+        "normal_count": 0,
+        "orhpan_count": 0,
+        "uncle_count": 0,
+        "effort": 0.0
+      },
+      {
+        "created": "2024-12-26T00:00:00",
+        "total_count": 0,
+        "normal_count": 0,
+        "orhpan_count": 0,
+        "uncle_count": 0,
+        "effort": 0.0
+      },
+      {
+        "created": "2024-12-27T00:00:00",
+        "total_count": 0,
+        "normal_count": 0,
+        "orhpan_count": 0,
+        "uncle_count": 0,
+        "effort": 0.0
+      },
+      {
+        "created": "2024-12-28T00:00:00",
+        "total_count": 0,
+        "normal_count": 0,
+        "orhpan_count": 0,
+        "uncle_count": 0,
+        "effort": 0.0
+      },
+      {
+        "created": "2024-12-29T00:00:00",
+        "total_count": 0,
+        "normal_count": 0,
+        "orhpan_count": 0,
+        "uncle_count": 0,
+        "effort": 0.0
+      },
+      {
+        "created": "2024-12-30T00:00:00",
+        "total_count": 0,
+        "normal_count": 0,
+        "orhpan_count": 0,
+        "uncle_count": 0,
+        "effort": 0.0
+      }
+    ]
+  },
+  "mature_blocks": [
+    {
+      "height": 1211936,
+      "hash": "00000000002f7c4d5848bd0aae18b8986d37e05bf03356665431011c8f41b6fd",
+      "timestamp": 1735488073,
+      "effort": 0.04603900847791193,
+      "uncle": false,
+      "confirmationprogress": 1.0,
+      "miner": "undefined",
+      "mode": "pplns",
+      "algo": "default",
+      "orphan": false,
+      "reward": 3000.000000000000
+    },
+    {
+      "height": 1211803,
+      "hash": "0000000000436bf162dde0ef461c31d8aa1c304c7ab41cbaef2dff373f79a6a6",
+      "timestamp": 1735480719,
+      "effort": 2.03007079416935,
+      "uncle": false,
+      "confirmationprogress": 1.0,
+      "miner": "undefined",
+      "mode": "pplns",
+      "algo": "default",
+      "orphan": false,
+      "reward": 3000.000000000000
+    },
+    {
+      "height": 1207606,
+      "hash": "000000000048ad03be3a3af4c75730c99587fdefed5a68dd33e9316a0a9d8d06",
+      "timestamp": 1735228622,
+      "effort": 0.1919703542320617,
+      "uncle": false,
+      "confirmationprogress": 1.0,
+      "miner": "undefined",
+      "mode": "pplns",
+      "algo": "default",
+      "orphan": false,
+      "reward": 3000.102777200000
+    },
+    {
+      "height": 1207282,
+      "hash": "00000000001bef5d3a78c7fb7ef35afdbfdd4651daafa1da7867433487122c63",
+      "timestamp": 1735207499,
+      "effort": 0.823639891103157,
+      "uncle": false,
+      "confirmationprogress": 1.0,
+      "miner": "undefined",
+      "mode": "pplns",
+      "algo": "default",
+      "orphan": false,
+      "reward": 3000.212488360000
+    },
+    {
+      "height": 1205289,
+      "hash": "000000000003a9d32a4ef3d2e8cc8bffbd064cfdc56e422d2525605b6c2de50f",
+      "timestamp": 1735087435,
+      "effort": 0.23270571965857806,
+      "uncle": false,
+      "confirmationprogress": 1.0,
+      "miner": "undefined",
+      "mode": "pplns",
+      "algo": "default",
+      "orphan": false,
+      "reward": 3000.066955420000
+    },
+    {
+      "height": 1204648,
+      "hash": "00000000002b874c663377cb001d05d54565813bff4f6ea70259d516eef59041",
+      "timestamp": 1735048742,
+      "effort": 0.29686542997780413,
+      "uncle": false,
+      "confirmationprogress": 1.0,
+      "miner": "undefined",
+      "mode": "pplns",
+      "algo": "default",
+      "orphan": false,
+      "reward": 3000.000000000000
+    },
+    {
+      "height": 1203810,
+      "hash": "00000000000c470de62c32e130fcab7fbe5cd6d2f05cb53e77a887b2a5403890",
+      "timestamp": 1734997638,
+      "effort": 0.1081031155312763,
+      "uncle": false,
+      "confirmationprogress": 1.0,
+      "miner": "undefined",
+      "mode": "pplns",
+      "algo": "default",
+      "orphan": false,
+      "reward": 3000.000000000000
+    },
+    {
+      "height": 1203511,
+      "hash": "000000000037987768a65cc2dd0710027bf1cb8e212de8919960a6eb0d1b0017",
+      "timestamp": 1734979870,
+      "effort": 0.14064896329560259,
+      "uncle": false,
+      "confirmationprogress": 1.0,
+      "miner": "undefined",
+      "mode": "pplns",
+      "algo": "default",
+      "orphan": false,
+      "reward": 3000.037240000000
+    }
+  ],
+  "immature_blocks": [],
+  "mature_count": 0,
+  "immature_count": 0,
+  "recalculate_state": false,
+  "recalculate_position": false,
+  "perfomance": {
+    "pplns": [
+      {
+        "algo": "default",
+        "created": "2024-12-30T01:00:00",
+        "hashrate": 28789353.372612204
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-30T00:00:00",
+        "hashrate": 31578106.37783429
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T23:00:00",
+        "hashrate": 29432836.860181823
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T22:00:00",
+        "hashrate": 27954107.140678857
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T21:00:00",
+        "hashrate": 24800697.93673794
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T20:00:00",
+        "hashrate": 26213825.475606233
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T19:00:00",
+        "hashrate": 25829405.82540679
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T18:00:00",
+        "hashrate": 30654547.626448702
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T17:00:00",
+        "hashrate": 29703862.57088451
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T16:00:00",
+        "hashrate": 28421730.13870394
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T15:00:00",
+        "hashrate": 29594614.30755876
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T14:00:00",
+        "hashrate": 29804082.547007766
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T13:00:00",
+        "hashrate": 30155733.29985307
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T12:00:00",
+        "hashrate": 29411241.824562136
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T11:00:00",
+        "hashrate": 26088451.646957774
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T10:00:00",
+        "hashrate": 32294909.713292833
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T09:00:00",
+        "hashrate": 28679777.980826084
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T08:00:00",
+        "hashrate": 28078565.553171907
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T07:00:00",
+        "hashrate": 27857452.595654886
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T06:00:00",
+        "hashrate": 29921642.53081272
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T05:00:00",
+        "hashrate": 25377703.027620777
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T04:00:00",
+        "hashrate": 31695216.370565027
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T03:00:00",
+        "hashrate": 22191595.753689554
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T02:00:00",
+        "hashrate": 26636999.567432877
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T01:00:00",
+        "hashrate": 28203388.659494016
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T00:00:00",
+        "hashrate": 27973153.67683078
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T22:00:00",
+        "hashrate": 6478707.104996757
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T21:00:00",
+        "hashrate": 30007866.41200379
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T20:00:00",
+        "hashrate": 29386183.97068505
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T19:00:00",
+        "hashrate": 32210268.276798382
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T18:00:00",
+        "hashrate": 29167448.942080002
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T17:00:00",
+        "hashrate": 31072007.072404444
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T16:00:00",
+        "hashrate": 26852202.74155603
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T15:00:00",
+        "hashrate": 28455792.65938933
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T14:00:00",
+        "hashrate": 30104765.068255693
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T13:00:00",
+        "hashrate": 26987518.42822871
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T12:00:00",
+        "hashrate": 28242585.673392594
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T11:00:00",
+        "hashrate": 32643794.017670967
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T10:00:00",
+        "hashrate": 25578525.56723641
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T09:00:00",
+        "hashrate": 36508547.021448955
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T08:00:00",
+        "hashrate": 32759013.858955145
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T07:00:00",
+        "hashrate": 29177317.508155987
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T06:00:00",
+        "hashrate": 32223334.1758277
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T05:00:00",
+        "hashrate": 27696107.848295685
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T04:00:00",
+        "hashrate": 32195571.291976348
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T03:00:00",
+        "hashrate": 30447733.964143205
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T02:00:00",
+        "hashrate": 28643217.125579502
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T01:00:00",
+        "hashrate": 27211432.862646688
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T00:00:00",
+        "hashrate": 53969966.17945525
+      }
+    ],
+    "solo": [
+      {
+        "algo": "default",
+        "created": "2024-12-30T00:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T23:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T22:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T21:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T20:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T19:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T18:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T17:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T16:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T15:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T14:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T13:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T12:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T11:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T10:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T09:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T08:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T07:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T06:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T05:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T04:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T03:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T02:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T01:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-29T00:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T23:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T22:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T21:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T20:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T19:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T18:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T17:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T16:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T15:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T14:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T13:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T12:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T11:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T10:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T09:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T08:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T07:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T06:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T05:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T04:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T03:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T02:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T01:00:00",
+        "hashrate": 0.0
+      },
+      {
+        "algo": "default",
+        "created": "2024-12-28T00:00:00",
+        "hashrate": 0.0
+      }
+    ]
+  }
+}
