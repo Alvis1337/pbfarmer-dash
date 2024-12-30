@@ -40,8 +40,7 @@ const Index: React.FC = () => {
     // Meowcoin fetching data
     const [meowcoinData, setMeowcoinData] = useState(null);
     useEffect(() => {
-        console.log("fetching meow")
-        fetchMeowcoinData();
+        setMeowcoinData(fetchMeowcoinData());
     }, []);
 
     const memoedMeowcoinData = useMemo(() => meowcoinData, [meowcoinData]);
@@ -78,7 +77,7 @@ const Index: React.FC = () => {
                             <SystemHealth minerId={minerId}/>
                         </Paper>
                     ))}
-                    {meowcoinData && (
+                    {memoedMeowcoinData && (
                         <Paper sx={{
                             padding: 3, backgroundColor: "#1E1E1E", marginBottom: 2, borderRadius: 2
                         }}>
