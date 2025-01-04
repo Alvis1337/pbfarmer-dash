@@ -20,12 +20,14 @@
     "@mui/material": "^6.3.0",
     "@mui/styled-engine-sc": "^6.2.0",
     "@tanstack/react-query": "^5.62.8",
+    "@types/node": "^22.10.5",
     "d3-scale": "^4.0.2",
     "dotenv": "^16.4.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.2",
     "recharts": "^2.15.0",
+    "std": "^0.1.40",
     "styled-components": "^6.1.13"
   },
   "devDependencies": {

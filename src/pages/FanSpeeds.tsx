@@ -21,7 +21,7 @@ const FanSpeeds: React.FC<FanSpeedsProps> = ({ minerId }) => {
     return (
         <div>
             <Typography variant="h6">Fan Speeds:</Typography>
-            {fans.map((speed, index) => (
+            {fans.map((speed: number, index: number) => (
                 <Typography key={index}>
                     Fan {index + 1}: {speed} RPM
                 </Typography>

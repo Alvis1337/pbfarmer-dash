@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Typography, Alert, CircularProgress, List, ListItem, ListItemText } from "@mui/material";
-import "jsr:@std/dotenv/load";
+
 
 interface PoolsStatsProps {
     minerId: string;
@@ -14,7 +14,7 @@ const PoolsStats: React.FC<PoolsStatsProps> = ({ minerId }) => {
     useEffect(() => {
         (async () => {
             try {
-                const response = await fetch(`${Deno.env.get("BACKEND_API")}/miners/${minerId}/pools`);
+                const response = await fetch(`http://localhost:5000/miners/${minerId}/pools`);
                 if (!response.ok) {
                     throw new Error("Failed to fetch pool stats");
                 }

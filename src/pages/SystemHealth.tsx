@@ -10,11 +10,10 @@ const SystemHealth: React.FC<SystemHealthProps> = ({minerId}) => {
     const [data, setData] = useState<any>(null);
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null);
-    // const [machineState, setMachineState] = useState(null);
 
     const fetchSystemHealth = async () => {
         try {
-            const response = await fetch(`http://192.168.112.177:5000/miners/${minerId}`);
+            const response = await fetch(`http://localhost:5000/miners/${minerId}`);
             if (!response.ok) {
                 throw new Error("Failed to fetch miner overview");
             }
@@ -28,23 +27,6 @@ const SystemHealth: React.FC<SystemHealthProps> = ({minerId}) => {
             setLoading(false);
         }
     };
-
-    const fetchMachineState = async () => {
-        try {
-            const response = await fetch(`${Deno.env.get("BACKEND_API")}/api/${minerId}/machine`);
-            if (!response.ok) {
-                throw new Error("Failed to fetch machine state");
-            }
-
-            const result = await response.json();
-            setMachineState(result.machine);
-        } catch (err) {
-            setError((err as Error).message || "Failed to fetch data");
-        } finally {
-            setLoading(false);
-        }
-    }
-
 
     useEffect(() => {
         fetchSystemHealth();

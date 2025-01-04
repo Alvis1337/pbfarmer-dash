@@ -25,6 +25,7 @@
     "npm:@mui/material@^6.3.0": "6.3.0_@emotion+react@11.14.0__react@18.3.1_@emotion+styled@11.14.0__@emotion+react@11.14.0___react@18.3.1__react@18.3.1_@types+react@18.3.9_react@18.3.1_react-dom@18.3.1__react@18.3.1",
     "npm:@mui/styled-engine-sc@^6.2.0": "6.2.0_styled-components@6.1.13__react@18.3.1__react-dom@18.3.1___react@18.3.1_react@18.3.1_react-dom@18.3.1__react@18.3.1",
     "npm:@tanstack/react-query@^5.62.8": "5.62.8_react@18.3.1",
+    "npm:@types/node@^22.10.5": "22.10.5",
     "npm:@types/react-dom@^18.3.0": "18.3.0",
     "npm:@types/react@^18.3.3": "18.3.9",
     "npm:@typescript-eslint/eslint-plugin@^7.15.0": "7.18.0_@typescript-eslint+parser@7.18.0__eslint@8.57.1__typescript@5.6.2_eslint@8.57.1_typescript@5.6.2",
@@ -40,6 +41,7 @@
     "npm:react-router-dom@^6.26.2": "6.26.2_react@18.3.1_react-dom@18.3.1__react@18.3.1",
     "npm:react@^18.3.1": "18.3.1",
     "npm:recharts@^2.15.0": "2.15.0_react@18.3.1_react-dom@18.3.1__react@18.3.1",
+    "npm:std@~0.1.40": "0.1.40",
     "npm:styled-components@^6.1.13": "6.1.13_react@18.3.1_react-dom@18.3.1__react@18.3.1",
     "npm:typescript@5.6.2": "5.6.2",
     "npm:typescript@^5.2.2": "5.6.2",
@@ -859,6 +861,12 @@
       "dependencies": [
         "@types/react",
         "hoist-non-react-statics"
+      ]
+    },
+    "@types/node@22.10.5": {
+      "integrity": "sha512-F8Q+SeGimwOo86fiovQh8qiXfFEh2/ocYv7tU5pJ3EXMSSxk1Joj5wefpFK2fHTf/N6HKGSxIDBT9f3gCxXPkQ==",
+      "dependencies": [
+        "undici-types"
       ]
     },
     "@types/parse-json@4.0.2": {
@@ -1943,6 +1951,9 @@
     "source-map@0.5.7": {
       "integrity": "sha512-LbrmJOMUSdEVxIKvdcJzQC+nQhe8FUZQTXQy6+I75skNgn3OoQ0DZA8YnFa7gp8tqtL3KPf1kmo0R5DoApeSGQ=="
     },
+    "std@0.1.40": {
+      "integrity": "sha512-wUf57hkDGCoVShrhPA8Q7lAg2Qosk+FaMlECmAsr1A4/rL2NRXFHQGBcgMUFKVkPEemJFW9gzjCQisRty14ohg=="
+    },
     "strip-ansi@6.0.1": {
       "integrity": "sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==",
       "dependencies": [
@@ -2025,6 +2036,9 @@
     "typescript@5.6.2": {
       "integrity": "sha512-NW8ByodCSNCwZeghjN3o+JX5OFH0Ojg6sadjEKY4huZ52TqbJTJnDo5+Tw98lSy63NZvi4n+ez5m2u5d4PkZyw=="
     },
+    "undici-types@6.20.0": {
+      "integrity": "sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg=="
+    },
     "update-browserslist-db@1.1.0_browserslist@4.24.0": {
       "integrity": "sha512-EdRAaAyk2cUE1wOf2DkEhzxqOQvFOoRJFNS6NeyJ01Gp2beMRpBAINjM2iDXE3KCuKhwnvHIQCJm6ThL2Z+HzQ==",
       "dependencies": [
@@ -2105,6 +2119,7 @@
         "npm:@mui/material@^6.3.0",
         "npm:@mui/styled-engine-sc@^6.2.0",
         "npm:@tanstack/react-query@^5.62.8",
+        "npm:@types/node@^22.10.5",
         "npm:@types/react-dom@^18.3.0",
         "npm:@types/react@^18.3.3",
         "npm:@typescript-eslint/eslint-plugin@^7.15.0",
@@ -2119,6 +2134,7 @@
         "npm:react-router-dom@^6.26.2",
         "npm:react@^18.3.1",
         "npm:recharts@^2.15.0",
+        "npm:std@~0.1.40",
         "npm:styled-components@^6.1.13",
         "npm:typescript@^5.2.2",
         "npm:vite@^5.3.4"

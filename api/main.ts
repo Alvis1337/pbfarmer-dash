@@ -4,19 +4,19 @@ import "jsr:@std/dotenv/load";
 
 const miners = {
     littleone: {
-        apiKey: Deno.env.get("LITTLEONE_API_KEY"),
+        apiKey: "5b281acc-de86-41bb-b14d-e266d9c9edbd",
         apiEndpoint: 'https://192.168.3.175/',
     },
     littletwo: {
-        apiKey: Deno.env.get("LITTLETWO_API_KEY"),
+        apiKey: "5b281acc-de86-41bb-b14d-e266d9c9edbd",
         apiEndpoint: 'https://192.168.3.171/',
     },
     littlethree: {
-        apiKey: Deno.env.get("LITTLETHREE_API_KEY"),
+        apiKey: "5b281acc-de86-41bb-b14d-e266d9c9edbd",
         apiEndpoint: 'https://192.168.3.138/',
     },
     littlefour: {
-        apiKey: Deno.env.get("LITTLEFOUR_API_KEY"),
+        apiKey: "5b281acc-de86-41bb-b14d-e266d9c9edbd",
         apiEndpoint: 'https://192.168.3.110/',
     },
 };
@@ -58,6 +58,7 @@ const getMinerData = async (minerId: string, endpoint: string) => {
     }
 
     const url = `${miner.apiEndpoint}${endpoint}`;
+    console.log(`Fetching data from ${url} with key ${miner.apiKey}`);
     return fetchFromMiner(url, miner.apiKey);
 };
 
@@ -123,5 +124,5 @@ const app = new Application();
 app.use(router.routes());
 app.use(router.allowedMethods());
 
-console.log('Server running on ${Deno.env.get("BACKEND_API")}');
+console.log('Server running on http://localhost:5000');
 await app.listen({port: 5000});

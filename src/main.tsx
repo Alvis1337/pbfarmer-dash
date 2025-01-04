@@ -7,7 +7,6 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import {createTheme, ThemeProvider} from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-import React from 'react'
 import {MinerProvider} from "./pages/MinerContext.tsx";
 
 const darkTheme = createTheme({
