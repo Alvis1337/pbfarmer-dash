@@ -2,6 +2,7 @@ export interface TimeSeriesData {
     time: number;
     value: number | null;
     minerId: string;
+    fans: number[];
 }
 
 export const fetchMeowcoinData = async () => {

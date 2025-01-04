@@ -3,6 +3,7 @@ import {Container, Grid, Paper, Typography} from "@mui/material";
 import CombinedHashRateChart from "./CombinedHashRateChart.tsx";
 import SystemHealth from "./SystemHealth.tsx";
 import {fetchMeowcoinData, TimeSeriesData} from "../utils/utils.tsx";
+import {MeowcoinData} from "../types.ts";
 
 const Index: React.FC = () => {
     const miners = ["littleone", "littletwo", "littlethree", "littlefour"];
@@ -47,6 +48,7 @@ const Index: React.FC = () => {
                         time: i,
                         value: dataPoint ? dataPoint.value : null,
                         minerId,
+                        fans: Array.from({ length: 4 }, () => Math.floor(Math.random() * 1000)),
                     });
                 });
             }
@@ -57,11 +59,12 @@ const Index: React.FC = () => {
         }
     };
 
-    // Kaspa data fetching
     useEffect(() => {
         const fetchKaspaData = async () => {
             await fetchMinerData(miners).then((minerData) => {
-                return setData(minerData);
+                if(minerData) {
+                    return setData(minerData);
+                }
             });
         };
         const intervalId = setInterval(fetchKaspaData, 30000);
@@ -84,11 +87,13 @@ const Index: React.FC = () => {
     }, [data, memoedMiners]);
 
     // Meowcoin fetching data
-    const [meowcoinData, setMeowcoinData] = useState(null);
+    const [meowcoinData, setMeowcoinData] = useState(null as MeowcoinData | null);
     useEffect(() => {
         const fetchData = async () => {
             await fetchMeowcoinData().then(data => {
-                setMeowcoinData(data);
+                if(data) {
+                    setMeowcoinData(data);
+                }
             });
         };
         const intervalId = setInterval(fetchData, 30000);
@@ -140,7 +145,7 @@ const Index: React.FC = () => {
                             </Typography>
                             <Typography variant="h6">
                                 Hash
-                                Rate: {(memoedMeowcoinData.modeStats.pplns.default.currentHashrate.toFixed(2) / 1000000).toFixed()} MH/s
+                                Rate: {(memoedMeowcoinData.modeStats.pplns.default.currentHashrate / 1000000).toFixed(2)} MH/s
                             </Typography>
                             <Typography variant="h6">
                                 Monthly Profit: {memoedMeowcoinData.stats.income.income_Month.toFixed(2)} MEWC

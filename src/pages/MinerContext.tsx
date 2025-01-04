@@ -2,7 +2,7 @@ import React, { createContext, useContext, useEffect, useState } from "react";
 import {TimeSeriesData} from "../utils/utils.tsx";
 
 interface MinerContextType {
-    data: any[];
+    data: TimeSeriesData[];
     loading: boolean;
     error: string | null;
 }
@@ -10,11 +10,11 @@ interface MinerContextType {
 const MinerContext = createContext<MinerContextType | undefined>(undefined);
 
 export const MinerProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-    const [data, setData] = useState<any[]>([]);
+    const [data, setData] = useState<TimeSeriesData[]>([]);
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null);
 
-    const fetchHashRate = async (minerId: string, apiUrl: string) => {
+    const fetchHashRate = async (minerId: string) => {
         const response = await fetch(
             `http://localhost:5000/api/${minerId}/timeseries`,
         );
@@ -51,6 +51,7 @@ export const MinerProvider: React.FC<{ children: React.ReactNode }> = ({ childre
                         time: i,
                         value: dataPoint ? dataPoint.value : null,
                         minerId,
+                        fans: Array.from({ length: 4 }, () => Math.floor(Math.random() * 1000)),
                     });
                 });
             }
@@ -67,8 +68,9 @@ export const MinerProvider: React.FC<{ children: React.ReactNode }> = ({ childre
             try {
                 const miners = ["littleone", "littletwo", "littlethree", "littlefour"];
                 const minerData = await fetchMinerData(miners);
-
-                setData(minerData);
+                if(minerData) {
+                    setData(minerData);
+                }
                 setError(null);
             } catch (err) {
                 setError((err as Error).message || "Failed to fetch data");
